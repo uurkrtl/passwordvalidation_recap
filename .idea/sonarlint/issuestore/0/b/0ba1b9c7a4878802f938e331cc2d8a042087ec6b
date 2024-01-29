@@ -1,0 +1,14 @@
+
+>
+java:S1643@"Use a StringBuilder instead.(ÏØ´­øÿÿÿÿ8™ÀÈ¨Õ1
+>
+java:S1643C"Use a StringBuilder instead.(ÏØ´­øÿÿÿÿ8™ÀÈ¨Õ1
+9
+java:S1643F"Use a StringBuilder instead.(ó¡ÏŞ8™ÀÈ¨Õ1
+>
+java:S1643I"Use a StringBuilder instead.(¦±Òìüÿÿÿÿ8š±É¨Õ1
+G	java:S106"+Replace this use of System.out by a logger.(Óè¨‡8§ÀÈ¨Õ1
+:
+java:S21198"Save and re-use this "Random".(¼İÅf8«ÀÈ¨Õ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8­ÀÈ¨Õ1
