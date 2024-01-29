@@ -65,19 +65,19 @@ class MainTest {
     @Test
     void checkCommonPassword_when123456_returnTrue() {
         String password = "123456";
-        assertTrue(Main.checkCommonPassword(password));
+        assertFalse(Main.checkCommonPassword(password));
     }
 
     @Test
     void checkCommonPassword_when_qwerty_returnTrue() {
         String password = "qwerty";
-        assertTrue(Main.checkCommonPassword(password));
+        assertFalse(Main.checkCommonPassword(password));
     }
 
     @Test
     void checkCommonPassword_whenStarkpass_returnFalse() {
         String password = "Starkpass";
-        assertFalse(Main.checkCommonPassword(password));
+        assertTrue(Main.checkCommonPassword(password));
     }
 
     @Test
@@ -96,5 +96,12 @@ class MainTest {
     void checkContainsSpecialCharacter_whenNoSpecialCharacter_returnTrue() {
         String password = "abc";
         assertFalse(Main.checkContainsSpecialCharacter(password));
+    }
+
+    @Test
+    void createPassword_whenPasswordSafe_returnTrue(){
+        String newPassword = Main.createPassword();
+        assertTrue(Main.checkCharacterLength(newPassword) && Main.checkContainsDigits(newPassword) && Main.checkContainsUppercaseAndLowercase(newPassword)
+                    && Main.checkCommonPassword(newPassword) && Main.checkContainsSpecialCharacter(newPassword));
     }
 }

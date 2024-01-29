@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -44,7 +43,7 @@ public class Main {
                 "qwerty",
                 "abc123",
         };
-        return Arrays.asList(commonPasswords).contains(password.toLowerCase());
+        return !Arrays.asList(commonPasswords).contains(password.toLowerCase());
     }
 
     public static boolean checkContainsSpecialCharacter(String password){
